@@ -1,10 +1,11 @@
-import random
+from random import randint
 
-nCpu = random.randint(0,5)
+nCpu = randint(0,5)
 
 nUsr = int(input('Tente acertar o numero: '))
 
-if(nCpu != nUsr):
+if nCpu != nUsr:
     print('Não acertou, tente novamente! CPU {} USER {}'.format(nCpu, nUsr))
+
 else:
     print('Parabéns, você acertou! CPU {} USER {}'.format(nCpu, nUsr))
